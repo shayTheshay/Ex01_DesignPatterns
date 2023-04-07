@@ -1,0 +1,177 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="BasicFacebookFeatures.FormMain">
+    <Position X="7" Y="0.5" Width="2.25" />
+    <Members>
+      <Field Name="buttonCrossPost" Hidden="true" />
+      <Field Name="buttonGroups" Hidden="true" />
+      <Field Name="buttonLikedPages" Hidden="true" />
+      <Field Name="buttonLogin" Hidden="true" />
+      <Field Name="buttonLogout" Hidden="true" />
+      <Field Name="buttonSwapAlbumPictures" Hidden="true" />
+      <Field Name="buttonUserDetails" Hidden="true" />
+      <Field Name="components" Hidden="true" />
+      <Method Name="Dispose" Hidden="true" />
+      <Method Name="InitializeComponent" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>AEAIJCAAAiAABASBAACAAAwSAEAgQoAIAAAAAAQogAg=</HashCode>
+      <FileName>FormMain.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="m_Appsettings" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="BasicFacebookFeatures.Subforms.FormAlbumView">
+    <Position X="17.25" Y="4" Width="1.5" />
+    <Members>
+      <Field Name="components" Hidden="true" />
+      <Field Name="listBoxAlbumsShow" Hidden="true" />
+      <Field Name="listBoxImageAlbum" Hidden="true" />
+      <Field Name="pictureBoxAlbum" Hidden="true" />
+      <Field Name="pictureBoxPicture" Hidden="true" />
+    </Members>
+    <AssociationLine Name="r_AlbumManager" Type="BasicFacebookFeatures.AlbumManager">
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="0.415" Y="-7.457" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AAACCAAAACABAgIAAACAAAAKAAAAAAAAAACAAACAAAA=</HashCode>
+      <FileName>Subforms\FormAlbumView.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="r_AlbumManager" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="BasicFacebookFeatures.Subforms.FormGroupCrossPost">
+    <Position X="11.5" Y="0.75" Width="1.5" />
+    <Members>
+      <Field Name="buttonCrossPost" Hidden="true" />
+      <Field Name="components" Hidden="true" />
+      <Method Name="Dispose" Hidden="true" />
+      <Method Name="InitializeComponent" Hidden="true" />
+      <Field Name="listBoxGroupsFrom" Hidden="true" />
+      <Field Name="listBoxGroupsTo" Hidden="true" />
+      <Field Name="listBoxStatuses" Hidden="true" />
+    </Members>
+    <AssociationLine Name="r_GroupManager" Type="BasicFacebookFeatures.GroupManager">
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="8.77" Y="9.042" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AIAAgAAAMCAJAAABAACAAAACwAAAAgAAACAAAgAgEAg=</HashCode>
+      <FileName>Subforms\FormGroupCrossPost.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="r_GroupManager" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="BasicFacebookFeatures.Subforms.FormGroupView">
+    <Position X="15.75" Y="1" Width="1.5" />
+    <Members>
+      <Field Name="buttonPost" Hidden="true" />
+      <Field Name="components" Hidden="true" />
+      <Method Name="Dispose" Hidden="true" />
+      <Method Name="InitializeComponent" Hidden="true" />
+      <Field Name="listBoxGroups" Hidden="true" />
+      <Field Name="listBoxStatuses" Hidden="true" />
+      <Field Name="textBoxStatus" Hidden="true" />
+    </Members>
+    <AssociationLine Name="r_GroupManager" Type="BasicFacebookFeatures.GroupManager">
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="7.481" Y="8.855" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAABICAJAAAAgACAACACAAAACAAAACAEAgBAAAA=</HashCode>
+      <FileName>Subforms\FormGroupView.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="r_GroupManager" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="BasicFacebookFeatures.Subforms.FormLikedPages">
+    <Position X="9.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAADABAAAQAAKBAQACAAAAAAAAAAAAAgAAABA=</HashCode>
+      <FileName>Subforms\FormLikedPages.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BasicFacebookFeatures.Subforms.FormAlbumCrosspost">
+    <Position X="13.25" Y="4" Width="1.5" />
+    <Members>
+      <Field Name="buttonAddPictureTo" Hidden="true" />
+      <Field Name="components" Hidden="true" />
+      <Method Name="Dispose" Hidden="true" />
+      <Method Name="InitializeComponent" Hidden="true" />
+      <Field Name="listBoxSelectedFromAlbum" Hidden="true" />
+      <Field Name="listBoxSelectedPicture" Hidden="true" />
+      <Field Name="ListBoxSelectedToAlbum" Hidden="true" />
+      <Field Name="pictureBoxShowAlbumPictureAdd" Hidden="true" />
+    </Members>
+    <AssociationLine Name="r_AlbumManager" Type="BasicFacebookFeatures.AlbumManager">
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="-1.657" Y="-7.233" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AAAACCAAACABAhCAAgiAABAiAAAAAAAAAAAAAABBAAA=</HashCode>
+      <FileName>Subforms\FormAlbumCrosspost.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="r_AlbumManager" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="BasicFacebookFeatures.Subforms.FormUserDetails">
+    <Position X="9.75" Y="4.5" Width="1.5" />
+    <Members>
+      <Field Name="components" Hidden="true" />
+      <Method Name="InitializeComponent" Hidden="true" />
+      <Field Name="labelAge" Hidden="true" />
+      <Field Name="labelAgeText" Hidden="true" />
+      <Field Name="labelBirthday" Hidden="true" />
+      <Field Name="labelBirthDayText" Hidden="true" />
+      <Field Name="labelEmail" Hidden="true" />
+      <Field Name="labelEmailText" Hidden="true" />
+      <Field Name="labelFriendCount" Hidden="true" />
+      <Field Name="labelFriendCountText" Hidden="true" />
+      <Field Name="labelGender" Hidden="true" />
+      <Field Name="labelGenderText" Hidden="true" />
+      <Field Name="labelLocation" Hidden="true" />
+      <Field Name="labelLocationText" Hidden="true" />
+      <Field Name="labelRalashionshipText" Hidden="true" />
+      <Field Name="labelRelashionship" Hidden="true" />
+      <Field Name="labelUserName" Hidden="true" />
+      <Field Name="labelWelcomBack" Hidden="true" />
+      <Field Name="pictureBoxProfile" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>AgAAIEAAECBBAEBAAgCACAgCAQIAEAFIAAAAAgAAIAA=</HashCode>
+      <FileName>Subforms\FormUserDetails.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BasicFacebookFeatures.GroupManager">
+    <Position X="13.75" Y="1" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AgBAAAAAAAAAAAAAAAAEAAAAAQAAAAAAAgAAAAAAAAg=</HashCode>
+      <FileName>GroupManager.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BasicFacebookFeatures.AlbumManager">
+    <Position X="15" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAQAAgAAAAAAAAAAAAAAAQAAAAAAAAAEgAAAAAAAAA=</HashCode>
+      <FileName>AlbumManager.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BasicFacebookFeatures.AppSettings">
+    <Position X="5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAACAAkAAAAAAAAAhAAIAAABAAAAAAAAAAAAAAAEmA=</HashCode>
+      <FileName>AppSettings.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
